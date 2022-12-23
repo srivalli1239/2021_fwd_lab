@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=form', initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validate( ){
+            var name=document.forms.regform.name.value;
+            var password=document.forms.regform.password.value;
+            var email=document.forms.regform.email.value;
+            var phonenumber=document.forms.regform.phonenumber.value;
+            if(name=" "){
+                alert("enter the details of name");
+                name.focus( );
+                return false;
+            }
+            if(password=" "){
+                alert("enter the details of name");
+                password.focus( );
+                return false;
+            }
+            if(email=" "){
+                alert("enter the details of name");
+                email.focus( );
+                return false;
+            }
+            if(phonenumber=" "){
+                alert("enter the details of name");
+                phonenumber.focus( );
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <h2>REGISTRATION FORM</h2>
+   <form action="sucess.html" name="regform" onsubmit="return validate( )">
+       <p>NAME: <input type="text" name="" size="65" id="name"></p> <br>
+       <p>PASSWORD: <input type="password" name="" size="65"id="password"></p> <br>
+       <p>EMAIL: <input type="text" size="65" id="email"></p> <br>
+       <p>PHONE NUMBER: <input type="text" size="65" id="phonenumber"></p>
+        <p><input type="submit" name=""value="send" id="submit"></p>
+
+
+
+
+
+</form> 
+</body>
+</html>
